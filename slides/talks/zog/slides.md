@@ -5,7 +5,8 @@ theme: default
 highlighter: shiki
 transition: slide-left
 author: Tristan May
-info: ## Slidev Starter Template Presentation slides for developers. Learn more at [Sli.dev](https://sli.dev)
+info: |
+  Zod-like schema validation library for go
 ---
 
 # Zog

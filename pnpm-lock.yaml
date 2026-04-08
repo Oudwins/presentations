@@ -10,11 +10,26 @@ importers:
     dependencies:
       slidev-workspace:
         specifier: ^0.9.3
-        version: 0.9.3(@types/node@22.18.13)(esbuild@0.27.7)(jiti@2.6.1)(typescript@5.9.3)
+        version: 0.9.3(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@types/node@22.18.13)(esbuild@0.27.7)(jiti@2.6.1)(typescript@5.9.3)
     devDependencies:
       playwright-chromium:
         specifier: ^1.56.1
         version: 1.56.1
+
+  slides/talks/future-ides-agents:
+    dependencies:
+      '@slidev/cli':
+        specifier: ^52.14.2
+        version: 52.14.2(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@nuxt/kit@3.20.0)(@types/markdown-it@14.1.2)(@types/node@22.18.13)(@vue/compiler-sfc@3.5.32)(lightningcss@1.30.2)(markdown-it-async@2.2.0)(markdown-it@14.1.1)(playwright-chromium@1.56.1)(postcss@8.5.9)
+      '@slidev/theme-default':
+        specifier: latest
+        version: 0.25.0
+      '@slidev/theme-seriph':
+        specifier: latest
+        version: 0.25.0
+      vue:
+        specifier: ^3.5.29
+        version: 3.5.32(typescript@5.9.3)
 
   slides/talks/zog:
     dependencies:
@@ -464,9 +479,6 @@ packages:
 
   '@mermaid-js/parser@1.1.0':
     resolution: {integrity: sha512-gxK9ZX2+Fex5zu8LhRQoMeMPEHbc73UKZ0FQ54YrQtUxE1VVhMwzeNtKRPAu5aXks4FasbMe4xB4bWrmq6Jlxw==}
-
-  '@napi-rs/wasm-runtime@1.1.0':
-    resolution: {integrity: sha512-Fq6DJW+Bb5jaWE69/qOE0D1TUN9+6uWhCeZpdnSBk14pjLcCWR7Q8n49PTSPHazM37JqrsdpEthXy2xn6jWWiA==}
 
   '@napi-rs/wasm-runtime@1.1.2':
     resolution: {integrity: sha512-sNXv5oLJ7ob93xkZ1XnxisYhGYXfaG9f65/ZgYuAu3qt7b3NadcOEhLvx28hv31PgX8SZJRYrAIPQilQmFpLVw==}
@@ -3862,13 +3874,6 @@ snapshots:
     dependencies:
       langium: 4.2.2
 
-  '@napi-rs/wasm-runtime@1.1.0':
-    dependencies:
-      '@emnapi/core': 1.7.1
-      '@emnapi/runtime': 1.7.1
-      '@tybys/wasm-util': 0.10.1
-    optional: true
-
   '@napi-rs/wasm-runtime@1.1.2(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)':
     dependencies:
       '@emnapi/core': 1.7.1
@@ -4030,9 +4035,12 @@ snapshots:
   '@rolldown/binding-openharmony-arm64@1.0.0-beta.53':
     optional: true
 
-  '@rolldown/binding-wasm32-wasi@1.0.0-beta.53':
+  '@rolldown/binding-wasm32-wasi@1.0.0-beta.53(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)':
     dependencies:
-      '@napi-rs/wasm-runtime': 1.1.0
+      '@napi-rs/wasm-runtime': 1.1.2(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
     optional: true
 
   '@rolldown/binding-win32-arm64-msvc@1.0.0-beta.53':
@@ -4504,12 +4512,12 @@ snapshots:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.1.16
       '@tailwindcss/oxide-win32-x64-msvc': 4.1.16
 
-  '@tailwindcss/vite@4.1.16(rolldown-vite@7.3.1(@types/node@22.18.13)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.2))':
+  '@tailwindcss/vite@4.1.16(rolldown-vite@7.3.1(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@types/node@22.18.13)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.2))':
     dependencies:
       '@tailwindcss/node': 4.1.16
       '@tailwindcss/oxide': 4.1.16
       tailwindcss: 4.1.16
-      vite: rolldown-vite@7.3.1(@types/node@22.18.13)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.2)
+      vite: rolldown-vite@7.3.1(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@types/node@22.18.13)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.2)
 
   '@tanstack/virtual-core@3.13.18': {}
 
@@ -4852,10 +4860,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vitejs/plugin-vue@6.0.2(rolldown-vite@7.3.1(@types/node@22.18.13)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.2))(vue@3.5.25(typescript@5.9.3))':
+  '@vitejs/plugin-vue@6.0.2(rolldown-vite@7.3.1(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@types/node@22.18.13)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.2))(vue@3.5.25(typescript@5.9.3))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.50
-      vite: rolldown-vite@7.3.1(@types/node@22.18.13)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.2)
+      vite: rolldown-vite@7.3.1(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@types/node@22.18.13)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.2)
       vue: 3.5.25(typescript@5.9.3)
 
   '@vitejs/plugin-vue@6.0.5(vite@7.3.2(@types/node@22.18.13)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2))(vue@3.5.32(typescript@5.9.3))':
@@ -6043,7 +6051,7 @@ snapshots:
   markdown-it-async@2.2.0:
     dependencies:
       '@types/markdown-it': 14.1.2
-      markdown-it: 14.1.0
+      markdown-it: 14.1.1
     optional: true
 
   markdown-it-footnote@4.0.0: {}
@@ -6664,14 +6672,14 @@ snapshots:
 
   robust-predicates@3.0.2: {}
 
-  rolldown-vite@7.3.1(@types/node@22.18.13)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.2):
+  rolldown-vite@7.3.1(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@types/node@22.18.13)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.2):
     dependencies:
       '@oxc-project/runtime': 0.101.0
       fdir: 6.5.0(picomatch@4.0.3)
       lightningcss: 1.30.2
       picomatch: 4.0.3
-      postcss: 8.5.6
-      rolldown: 1.0.0-beta.53
+      postcss: 8.5.9
+      rolldown: 1.0.0-beta.53(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)
       tinyglobby: 0.2.15
     optionalDependencies:
       '@types/node': 22.18.13
@@ -6679,8 +6687,11 @@ snapshots:
       fsevents: 2.3.3
       jiti: 2.6.1
       yaml: 2.8.2
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
 
-  rolldown@1.0.0-beta.53:
+  rolldown@1.0.0-beta.53(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1):
     dependencies:
       '@oxc-project/types': 0.101.0
       '@rolldown/pluginutils': 1.0.0-beta.53
@@ -6695,9 +6706,12 @@ snapshots:
       '@rolldown/binding-linux-x64-gnu': 1.0.0-beta.53
       '@rolldown/binding-linux-x64-musl': 1.0.0-beta.53
       '@rolldown/binding-openharmony-arm64': 1.0.0-beta.53
-      '@rolldown/binding-wasm32-wasi': 1.0.0-beta.53
+      '@rolldown/binding-wasm32-wasi': 1.0.0-beta.53(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)
       '@rolldown/binding-win32-arm64-msvc': 1.0.0-beta.53
       '@rolldown/binding-win32-x64-msvc': 1.0.0-beta.53
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
 
   rollup@4.52.5:
     dependencies:
@@ -6786,10 +6800,10 @@ snapshots:
 
   sisteransi@1.0.5: {}
 
-  slidev-workspace@0.9.3(@types/node@22.18.13)(esbuild@0.27.7)(jiti@2.6.1)(typescript@5.9.3):
+  slidev-workspace@0.9.3(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@types/node@22.18.13)(esbuild@0.27.7)(jiti@2.6.1)(typescript@5.9.3):
     dependencies:
-      '@tailwindcss/vite': 4.1.16(rolldown-vite@7.3.1(@types/node@22.18.13)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.2))
-      '@vitejs/plugin-vue': 6.0.2(rolldown-vite@7.3.1(@types/node@22.18.13)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.2))(vue@3.5.25(typescript@5.9.3))
+      '@tailwindcss/vite': 4.1.16(rolldown-vite@7.3.1(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@types/node@22.18.13)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.2))
+      '@vitejs/plugin-vue': 6.0.2(rolldown-vite@7.3.1(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@types/node@22.18.13)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.2))(vue@3.5.25(typescript@5.9.3))
       '@vueuse/core': 13.9.0(vue@3.5.25(typescript@5.9.3))
       class-variance-authority: 0.7.1
       clsx: 2.1.1
@@ -6800,10 +6814,12 @@ snapshots:
       tw-animate-css: 1.4.0
       unhead: 2.0.19
       vaul-vue: 0.4.1(reka-ui@2.8.0(vue@3.5.25(typescript@5.9.3)))(vue@3.5.25(typescript@5.9.3))
-      vite: rolldown-vite@7.3.1(@types/node@22.18.13)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.2)
+      vite: rolldown-vite@7.3.1(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@types/node@22.18.13)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.2)
       vue: 3.5.25(typescript@5.9.3)
       yaml: 2.8.2
     transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
       - '@types/node'
       - '@vue/composition-api'
       - esbuild
