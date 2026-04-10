@@ -277,26 +277,26 @@ class: text-center
   <h2 class="!text-5xl !font-bold !tracking-tight text-white">Current solution shapes</h2>
 </div>
 
----
-zoom: 0.82
----
-
-<h1 class="!text-white !text-3xl !font-bold !tracking-tight">IDEs</h1>
-
-<div class="mt-8 grid grid-cols-2 gap-5 max-w-5xl mx-auto">
-  <div class="overflow-hidden rounded-xl border border-white/8 bg-white/[0.02]">
-    <img src="./assets/solution-shapes/cursor.png" class="h-64 w-full object-cover object-top opacity-90" alt="Cursor homepage screenshot" />
-    <div class="px-5 py-3 border-t border-white/8">
-      <div class="text-white text-base font-medium">Cursor</div>
-    </div>
-  </div>
-  <div class="overflow-hidden rounded-xl border border-white/8 bg-white/[0.02]">
-    <img src="./assets/solution-shapes/windsurf.png" class="h-64 w-full object-cover object-top opacity-90" alt="Windsurf homepage screenshot" />
-    <div class="px-5 py-3 border-t border-white/8">
-      <div class="text-white text-base font-medium">Windsurf</div>
-    </div>
-  </div>
-</div>
+<!-- --- -->
+<!-- zoom: 0.82 -->
+<!-- --- -->
+<!---->
+<!-- <h1 class="!text-white !text-3xl !font-bold !tracking-tight">IDEs</h1> -->
+<!---->
+<!-- <div class="mt-8 grid grid-cols-2 gap-5 max-w-5xl mx-auto"> -->
+<!--   <div class="overflow-hidden rounded-xl border border-white/8 bg-white/[0.02]"> -->
+<!--     <img src="./assets/solution-shapes/cursor.png" class="h-64 w-full object-cover object-top opacity-90" alt="Cursor homepage screenshot" /> -->
+<!--     <div class="px-5 py-3 border-t border-white/8"> -->
+<!--       <div class="text-white text-base font-medium">Cursor</div> -->
+<!--     </div> -->
+<!--   </div> -->
+<!--   <div class="overflow-hidden rounded-xl border border-white/8 bg-white/[0.02]"> -->
+<!--     <img src="./assets/solution-shapes/windsurf.png" class="h-64 w-full object-cover object-top opacity-90" alt="Windsurf homepage screenshot" /> -->
+<!--     <div class="px-5 py-3 border-t border-white/8"> -->
+<!--       <div class="text-white text-base font-medium">Windsurf</div> -->
+<!--     </div> -->
+<!--   </div> -->
+<!-- </div> -->
 
 ---
 zoom: 0.82
@@ -320,32 +320,32 @@ zoom: 0.82
 </div>
 
 
----
-zoom: 0.76
----
-
-<h1 class="!text-white !text-3xl !font-bold !tracking-tight">Cloud agents</h1>
-
-<div class="mt-8 grid grid-cols-3 gap-4 text-left text-sm">
-  <div class="overflow-hidden rounded-xl border border-white/8 bg-white/[0.02]">
-    <img src="./assets/solution-shapes/claude.png" class="h-52 w-full object-cover object-top opacity-90" alt="Claude homepage screenshot" />
-    <div class="px-4 py-3 border-t border-white/8">
-      <div class="text-white text-base font-medium">Claude</div>
-    </div>
-  </div>
-  <div class="overflow-hidden rounded-xl border border-white/8 bg-white/[0.02]">
-    <img src="./assets/solution-shapes/cursor.png" class="h-52 w-full object-cover object-top opacity-90" alt="Cursor homepage screenshot" />
-    <div class="px-4 py-3 border-t border-white/8">
-      <div class="text-white text-base font-medium">Cursor</div>
-    </div>
-  </div>
-  <div class="overflow-hidden rounded-xl border border-white/8 bg-white/[0.02]">
-    <img src="./assets/solution-shapes/devin.png" class="h-52 w-full object-cover object-top opacity-90" alt="Devin homepage screenshot" />
-    <div class="px-4 py-3 border-t border-white/8">
-      <div class="text-white text-base font-medium">Devin</div>
-    </div>
-  </div>
-</div>
+<!-- --- -->
+<!-- zoom: 0.76 -->
+<!-- --- -->
+<!---->
+<!-- <h1 class="!text-white !text-3xl !font-bold !tracking-tight">Cloud agents</h1> -->
+<!---->
+<!-- <div class="mt-8 grid grid-cols-3 gap-4 text-left text-sm"> -->
+<!--   <div class="overflow-hidden rounded-xl border border-white/8 bg-white/[0.02]"> -->
+<!--     <img src="./assets/solution-shapes/claude.png" class="h-52 w-full object-cover object-top opacity-90" alt="Claude homepage screenshot" /> -->
+<!--     <div class="px-4 py-3 border-t border-white/8"> -->
+<!--       <div class="text-white text-base font-medium">Claude</div> -->
+<!--     </div> -->
+<!--   </div> -->
+<!--   <div class="overflow-hidden rounded-xl border border-white/8 bg-white/[0.02]"> -->
+<!--     <img src="./assets/solution-shapes/cursor.png" class="h-52 w-full object-cover object-top opacity-90" alt="Cursor homepage screenshot" /> -->
+<!--     <div class="px-4 py-3 border-t border-white/8"> -->
+<!--       <div class="text-white text-base font-medium">Cursor</div> -->
+<!--     </div> -->
+<!--   </div> -->
+<!--   <div class="overflow-hidden rounded-xl border border-white/8 bg-white/[0.02]"> -->
+<!--     <img src="./assets/solution-shapes/devin.png" class="h-52 w-full object-cover object-top opacity-90" alt="Devin homepage screenshot" /> -->
+<!--     <div class="px-4 py-3 border-t border-white/8"> -->
+<!--       <div class="text-white text-base font-medium">Devin</div> -->
+<!--     </div> -->
+<!--   </div> -->
+<!-- </div> -->
 
 ---
 zoom: 0.76
