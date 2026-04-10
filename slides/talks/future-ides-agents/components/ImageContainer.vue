@@ -31,6 +31,8 @@ const props = defineProps({
   overflow: hidden;
   width: 100%;
   margin-top: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
 }
 
 .image-container img {

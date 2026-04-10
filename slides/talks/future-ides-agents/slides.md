@@ -15,22 +15,22 @@ highlighter: shiki
 mdc: true
 ---
 
-<div class="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950" />
-<div class="absolute top-16 left-12 w-72 h-72 rounded-full bg-emerald-500/15 blur-3xl" />
-<div class="absolute bottom-10 right-16 w-96 h-96 rounded-full bg-cyan-500/10 blur-3xl" />
-
-<div class="relative z-10 h-full flex flex-col justify-center px-14">
-  <p class="uppercase tracking-[0.35em] text-emerald-300 text-sm mb-6">Slidev talk</p>
-  <h1 class="!text-5xl !leading-tight !font-700 text-white max-w-4xl mx-auto">
-    The future of IDE's in the agent of agents
+<div class="h-full flex flex-col items-center justify-center px-16">
+  <div class="mb-10 flex items-center gap-2 text-[#888] text-sm tracking-wide uppercase">
+    <div class="w-5 h-px bg-[#333]" />
+    <span>Slidev Talk</span>
+    <div class="w-5 h-px bg-[#333]" />
+  </div>
+  <h1 class="!text-[56px] !leading-[1.1] !font-bold text-white max-w-4xl tracking-tight">
+    The future of IDE's in<br>the age of agents
   </h1>
-  <p class="mt-6 text-xl text-slate-200 max-w-3xl mx-auto leading-relaxed">
-    My AI first coding workflow: the tools, prompts and flows I use automate the simple parts of engineering work.
+  <p class="mt-6 text-lg text-[#888] max-w-2xl leading-relaxed">
+    My AI-first coding workflow: the tools, prompts and flows I use to automate the simple parts of engineering work.
   </p>
-  <div class="mt-10 flex justify-center gap-3 text-sm text-slate-300">
-    <span class="rounded-full border border-white/15 px-4 py-1">Agent orchestration</span>
-    <span class="rounded-full border border-white/15 px-4 py-1">Parallel threads of work</span>
-    <span class="rounded-full border border-white/15 px-4 py-1">Context engineering</span>
+  <div class="mt-12 flex gap-3 text-[13px]">
+    <span class="rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-[#888]">Agent orchestration</span>
+    <span class="rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-[#888]">Parallel threads</span>
+    <span class="rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-[#888]">Context engineering</span>
   </div>
 </div>
 
@@ -38,21 +38,24 @@ mdc: true
 Hey from comment
 -->
 
+
+
+
 ---
 layout: center
 class: text-left
 ---
 
-<h1 class="!text-slate-100">Quick room check</h1>
+<h1 class="!text-white !text-4xl !font-bold !tracking-tight">Quick room check</h1>
 
-<div class="mt-8 space-y-5 text-2xl leading-tight text-slate-900">
-  <div class="rounded-2xl bg-slate-100 px-6 py-4 text-slate-900">
+<div class="mt-10 space-y-4 text-lg max-w-2xl">
+  <div class="rounded-xl border border-white/8 bg-white/[0.03] px-6 py-5 text-[#ccc]">
     How many people have multiple versions of the repo they are working in?
   </div>
-  <div class="rounded-2xl bg-slate-100 px-6 py-4 text-slate-900">
+  <div class="rounded-xl border border-white/8 bg-white/[0.03] px-6 py-5 text-[#ccc]">
     How many people use worktrees specifically?
   </div>
-  <div class="rounded-2xl bg-slate-100 px-6 py-4 text-slate-900">
+  <div class="rounded-xl border border-white/8 bg-white/[0.03] px-6 py-5 text-[#ccc]">
     How many agents do you run in parallel on average?
   </div>
 </div>
@@ -62,13 +65,30 @@ layout: default
 layoutClass: gap-14
 ---
 
-<h1 class="!text-slate-100">Who am I?</h1>
+<h1 class="!text-white !text-4xl !font-bold !tracking-tight">Who am I?</h1>
 
-- Wrote my first line of code at 10 or 11 trying to build a Unity game
-- Founder of many failed or sunset startups and side projects
-- Before Eleven, I worked as an SDE on software for operating spacecraft
-- I do a lot of open source work; biggest claim to fame is `Zog`, a validation library for Go
-- I work mostly on the marketing website
+<div class="mt-8 space-y-4 text-lg text-[#a1a1a1]">
+  <div class="flex items-start gap-4">
+    <span class="text-[#444] mt-0.5">/01</span>
+    <span>Wrote my first line of code at 10 or 11 trying to build a Unity game</span>
+  </div>
+  <div class="flex items-start gap-4">
+    <span class="text-[#444] mt-0.5">/02</span>
+    <span>Founder of many failed or sunset startups and side projects</span>
+  </div>
+  <div class="flex items-start gap-4">
+    <span class="text-[#444] mt-0.5">/03</span>
+    <span>Before Eleven, I worked as an SDE on software for operating spacecraft</span>
+  </div>
+  <div class="flex items-start gap-4">
+    <span class="text-[#444] mt-0.5">/04</span>
+    <span>I do a lot of open source work; biggest claim to fame is <code>Zog</code>, a validation library for Go</span>
+  </div>
+  <div class="flex items-start gap-4">
+    <span class="text-[#444] mt-0.5">/05</span>
+    <span>I work mostly on the marketing website</span>
+  </div>
+</div>
 
 
 
@@ -79,43 +99,67 @@ class: bg-top
 layoutClass: gap-14
 ---
 
-<h1 class="!text-slate-100">And also!</h1>
+<h1 class="!text-white !text-4xl !font-bold !tracking-tight">And also!</h1>
 
-- I run my own home server
-- I play Dungeons and Dragons and airsoft
-- I hate breaking flow, so I hate notifications
-
-
+<div class="mt-8 space-y-4 text-lg text-[#a1a1a1]">
+  <div class="flex items-start gap-4">
+    <span class="text-[#444]">--</span>
+    <span>I run my own home server</span>
+  </div>
+  <div class="flex items-start gap-4">
+    <span class="text-[#444]">--</span>
+    <span>I play Dungeons and Dragons and airsoft</span>
+  </div>
+  <div class="flex items-start gap-4">
+    <span class="text-[#444]">--</span>
+    <span>I hate breaking flow, so I hate notifications</span>
+  </div>
+</div>
 
 
 ---
 layout: default
 ---
 
-## What I won't discuss today
+<h1 class="!text-white !text-4xl !font-bold !tracking-tight">What I won't discuss today</h1>
 
-- Tools or SOPs for improving agent output
-- Context engineering
-- Claude Code Specific ideas
-- Which models are best for what
-- Skills, MCPs, subagents...
+<div class="mt-10 space-y-3 text-lg text-[#888]">
+  <div class="flex items-center gap-3">
+    <span class="w-1.5 h-1.5 rounded-full bg-[#333]" />
+    Tools or SOPs for improving agent output
+  </div>
+  <div class="flex items-center gap-3">
+    <span class="w-1.5 h-1.5 rounded-full bg-[#333]" />
+    Context engineering
+  </div>
+  <div class="flex items-center gap-3">
+    <span class="w-1.5 h-1.5 rounded-full bg-[#333]" />
+    Claude Code specific ideas
+  </div>
+  <div class="flex items-center gap-3">
+    <span class="w-1.5 h-1.5 rounded-full bg-[#333]" />
+    Which models are best for what
+  </div>
+  <div class="flex items-center gap-3">
+    <span class="w-1.5 h-1.5 rounded-full bg-[#333]" />
+    Skills, MCPs, subagents...
+  </div>
+</div>
 
-But if people are interested in some of that maybe I can come back at some point to chat about it
-
-
-
+<p class="mt-10 text-sm text-[#555]">But if people are interested in some of that maybe I can come back at some point to chat about it</p>
 
 
 ---
-layout: statement
+layout: center
 class: text-center
 ---
 
-## Guilty admision
-
-I was a coding agent skeptic until ~Dec 2025
-
-
+<div class="max-w-2xl mx-auto">
+  <p class="text-sm uppercase tracking-widest text-[#555] mb-6">Confession</p>
+  <h2 class="!text-4xl !font-bold !tracking-tight text-white">Guilty admission</h2>
+  <div class="w-16 h-px bg-[#333] mx-auto mt-6 mb-6" />
+  <p class="text-xl text-[#888]">I was a coding agent skeptic until ~Dec 2025</p>
+</div>
 
 <!--
 I was using cursor every day, in fact I started in 2023 few months after they launched. 
@@ -129,9 +173,9 @@ layout: default
 class: "!flex !flex-col !overflow-hidden"
 ---
 
-<h1 class="!text-slate-100 !flex-shrink-0">But then something changed. New opus & GPT models</h1>
+<h1 class="!text-white !text-3xl !font-bold !tracking-tight !flex-shrink-0">But then something changed</h1>
 
-<p class="!flex-shrink-0">So I started using cursor's background agents. With and without worktrees</p>
+<p class="!flex-shrink-0 text-[#888] mt-2">New Opus & GPT models. So I started using Cursor's background agents. With and without worktrees.</p>
 
 <ImageContainer src="/assets/cursor-2.png" alt="Cursor agent interface" />
 
@@ -151,16 +195,16 @@ image: /assets/isolation.png
 backgroundSize: contain
 ---
 
-<h1 class="!text-slate-100">I had this problem every week</h1>
+<h1 class="!text-white !text-3xl !font-bold !tracking-tight">I had this problem every week</h1>
 
 
 ---
 layout: center
 ---
 
-<h1 class="!text-slate-100">4 Cursor instances</h1>
+<h1 class="!text-white !text-4xl !font-bold !tracking-tight">4 Cursor instances</h1>
 
-<p class="!flex-shrink-0">I found myself with 4 cusor instances open juggling between them.</p>
+<p class="text-[#888] mt-2">I found myself with 4 Cursor instances open, juggling between them.</p>
 
 <ImageContainer src="/assets/4-cursors.png" alt="Cursor agent interface" />
 
@@ -177,7 +221,10 @@ layout: center
 layout: center
 ---
 
-<h1 class="!text-slate-100 !text-6xl text-center">Cloud agents</h1>
+<div class="text-center">
+  <p class="text-sm uppercase tracking-widest text-[#555] mb-6">Exploration</p>
+  <h1 class="!text-6xl !font-bold !tracking-tight text-white">Cloud agents</h1>
+</div>
 
 ---
 layout: image
@@ -195,36 +242,44 @@ backgroundSize: contain
 
 
 ---
-layout: statement
+layout: center
+class: text-center
 ---
 
-## What am I doing wrong?
-Someone has to have figured this out already. Lets research
+<div class="max-w-2xl mx-auto">
+  <h2 class="!text-4xl !font-bold !tracking-tight text-white">What am I doing wrong?</h2>
+  <div class="w-16 h-px bg-[#333] mx-auto mt-6 mb-6" />
+  <p class="text-xl text-[#888]">Someone has to have figured this out already. Let's research.</p>
+</div>
 
 
 ---
-layout: section
+layout: center
+class: text-center
 ---
 
-## Current solution shapes
+<div>
+  <p class="text-sm uppercase tracking-widest text-[#555] mb-4">Research</p>
+  <h2 class="!text-5xl !font-bold !tracking-tight text-white">Current solution shapes</h2>
+</div>
 
 ---
 zoom: 0.82
 ---
 
-<h1 class="!text-slate-100">IDE's</h1>
+<h1 class="!text-white !text-3xl !font-bold !tracking-tight">IDEs</h1>
 
-<div class="mt-8 grid grid-cols-2 gap-6 text-left max-w-5xl mx-auto">
-  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
-    <img src="./assets/solution-shapes/cursor.png" class="h-64 w-full object-cover object-top" alt="Cursor homepage screenshot" />
-    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
-      <div class="font-semibold">Cursor</div>
+<div class="mt-8 grid grid-cols-2 gap-5 max-w-5xl mx-auto">
+  <div class="overflow-hidden rounded-xl border border-white/8 bg-white/[0.02]">
+    <img src="./assets/solution-shapes/cursor.png" class="h-64 w-full object-cover object-top opacity-90" alt="Cursor homepage screenshot" />
+    <div class="px-5 py-3 border-t border-white/8">
+      <div class="text-white text-base font-medium">Cursor</div>
     </div>
   </div>
-  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
-    <img src="./assets/solution-shapes/windsurf.png" class="h-64 w-full object-cover object-top" alt="Windsurf homepage screenshot" />
-    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
-      <div class="font-semibold">Windsurf</div>
+  <div class="overflow-hidden rounded-xl border border-white/8 bg-white/[0.02]">
+    <img src="./assets/solution-shapes/windsurf.png" class="h-64 w-full object-cover object-top opacity-90" alt="Windsurf homepage screenshot" />
+    <div class="px-5 py-3 border-t border-white/8">
+      <div class="text-white text-base font-medium">Windsurf</div>
     </div>
   </div>
 </div>
@@ -233,19 +288,19 @@ zoom: 0.82
 zoom: 0.82
 ---
 
-<h1 class="!text-slate-100">Canvan</h1>
+<h1 class="!text-white !text-3xl !font-bold !tracking-tight">Kanban</h1>
 
-<div class="mt-8 grid grid-cols-2 gap-6 text-left max-w-5xl mx-auto">
-  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
-    <img src="./assets/solution-shapes/vibe-kanban.png" class="h-72 w-full object-cover object-top" alt="Vibe Kanban homepage screenshot" />
-    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
-      <div class="font-semibold">Vibe Kanban</div>
+<div class="mt-8 grid grid-cols-2 gap-5 max-w-5xl mx-auto">
+  <div class="overflow-hidden rounded-xl border border-white/8 bg-white/[0.02]">
+    <img src="./assets/solution-shapes/vibe-kanban.png" class="h-72 w-full object-cover object-top opacity-90" alt="Vibe Kanban homepage screenshot" />
+    <div class="px-5 py-3 border-t border-white/8">
+      <div class="text-white text-base font-medium">Vibe Kanban</div>
     </div>
   </div>
-  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
-    <img src="https://automaker.app/card.png" class="h-72 w-full object-cover object-top" alt="Automaker share image" />
-    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
-      <div class="font-semibold">Automaker</div>
+  <div class="overflow-hidden rounded-xl border border-white/8 bg-white/[0.02]">
+    <img src="https://automaker.app/card.png" class="h-72 w-full object-cover object-top opacity-90" alt="Automaker share image" />
+    <div class="px-5 py-3 border-t border-white/8">
+      <div class="text-white text-base font-medium">Automaker</div>
     </div>
   </div>
 </div>
@@ -255,25 +310,25 @@ zoom: 0.82
 zoom: 0.76
 ---
 
-<h1 class="!text-slate-100">Cloud agents</h1>
+<h1 class="!text-white !text-3xl !font-bold !tracking-tight">Cloud agents</h1>
 
-<div class="mt-8 grid grid-cols-3 gap-5 text-left text-sm">
-  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
-    <img src="./assets/solution-shapes/claude.png" class="h-52 w-full object-cover object-top" alt="Claude homepage screenshot" />
-    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
-      <div class="font-semibold">Claude</div>
+<div class="mt-8 grid grid-cols-3 gap-4 text-left text-sm">
+  <div class="overflow-hidden rounded-xl border border-white/8 bg-white/[0.02]">
+    <img src="./assets/solution-shapes/claude.png" class="h-52 w-full object-cover object-top opacity-90" alt="Claude homepage screenshot" />
+    <div class="px-4 py-3 border-t border-white/8">
+      <div class="text-white text-base font-medium">Claude</div>
     </div>
   </div>
-  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
-    <img src="./assets/solution-shapes/cursor.png" class="h-52 w-full object-cover object-top" alt="Cursor homepage screenshot" />
-    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
-      <div class="font-semibold">Cursor</div>
+  <div class="overflow-hidden rounded-xl border border-white/8 bg-white/[0.02]">
+    <img src="./assets/solution-shapes/cursor.png" class="h-52 w-full object-cover object-top opacity-90" alt="Cursor homepage screenshot" />
+    <div class="px-4 py-3 border-t border-white/8">
+      <div class="text-white text-base font-medium">Cursor</div>
     </div>
   </div>
-  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
-    <img src="./assets/solution-shapes/devin.png" class="h-52 w-full object-cover object-top" alt="Devin homepage screenshot" />
-    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
-      <div class="font-semibold">Devin</div>
+  <div class="overflow-hidden rounded-xl border border-white/8 bg-white/[0.02]">
+    <img src="./assets/solution-shapes/devin.png" class="h-52 w-full object-cover object-top opacity-90" alt="Devin homepage screenshot" />
+    <div class="px-4 py-3 border-t border-white/8">
+      <div class="text-white text-base font-medium">Devin</div>
     </div>
   </div>
 </div>
@@ -282,31 +337,31 @@ zoom: 0.76
 zoom: 0.76
 ---
 
-<h1 class="!text-slate-100">Agent first</h1>
+<h1 class="!text-white !text-3xl !font-bold !tracking-tight">Agent first</h1>
 
-<div class="mt-8 grid grid-cols-4 gap-5 text-left text-sm">
-  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
-    <img src="./assets/solution-shapes/t3-codes.png" class="h-52 w-full object-cover object-top" alt="T3 Code homepage screenshot" />
-    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
-      <div class="font-semibold">T3 Code</div>
+<div class="mt-8 grid grid-cols-4 gap-4 text-left text-sm">
+  <div class="overflow-hidden rounded-xl border border-white/8 bg-white/[0.02]">
+    <img src="./assets/solution-shapes/t3-codes.png" class="h-52 w-full object-cover object-top opacity-90" alt="T3 Code homepage screenshot" />
+    <div class="px-4 py-3 border-t border-white/8">
+      <div class="text-white text-sm font-medium">T3 Code</div>
     </div>
   </div>
-  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
-    <img src="./assets/solution-shapes/cursor.png" class="h-52 w-full object-cover object-top" alt="Cursor 3.0 screenshot" />
-    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
-      <div class="font-semibold">Cursor 3.0</div>
+  <div class="overflow-hidden rounded-xl border border-white/8 bg-white/[0.02]">
+    <img src="./assets/solution-shapes/cursor.png" class="h-52 w-full object-cover object-top opacity-90" alt="Cursor 3.0 screenshot" />
+    <div class="px-4 py-3 border-t border-white/8">
+      <div class="text-white text-sm font-medium">Cursor 3.0</div>
     </div>
   </div>
-  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
-    <img src="./assets/solution-shapes/conductor.png" class="h-52 w-full object-cover object-top" alt="Conductor homepage screenshot" />
-    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
-      <div class="font-semibold">Conductor</div>
+  <div class="overflow-hidden rounded-xl border border-white/8 bg-white/[0.02]">
+    <img src="./assets/solution-shapes/conductor.png" class="h-52 w-full object-cover object-top opacity-90" alt="Conductor homepage screenshot" />
+    <div class="px-4 py-3 border-t border-white/8">
+      <div class="text-white text-sm font-medium">Conductor</div>
     </div>
   </div>
-  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
-    <img src="./assets/solution-shapes/superset.png" class="h-52 w-full object-cover object-top" alt="Superset homepage screenshot" />
-    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
-      <div class="font-semibold">Superset</div>
+  <div class="overflow-hidden rounded-xl border border-white/8 bg-white/[0.02]">
+    <img src="./assets/solution-shapes/superset.png" class="h-52 w-full object-cover object-top opacity-90" alt="Superset homepage screenshot" />
+    <div class="px-4 py-3 border-t border-white/8">
+      <div class="text-white text-sm font-medium">Superset</div>
     </div>
   </div>
 </div>
@@ -317,18 +372,21 @@ layout: image
 image: https://miro.medium.com/v2/resize:fit:700/1*ReBwrC1sc9USnhvYXcrd4A.jpeg
 ---
 
-<!-- <h1 class="!text-slate-100">Gastown</h1> -->
+<!-- <h1 class="!text-white">Gastown</h1> -->
 
 
 <!--
-Gastown. Oschestrator first
+Gastown. Orchestrator first
 -->
 
 ---
 layout: center
 ---
 
-<h1 class="!text-slate-100 !text-6xl text-center">Build your own</h1>
+<div class="text-center">
+  <p class="text-sm uppercase tracking-widest text-[#555] mb-6">My approach</p>
+  <h1 class="!text-6xl !font-bold !tracking-tight text-white">Build your own</h1>
+</div>
 
 
 
@@ -337,7 +395,7 @@ layout: center
 zoom: 0.82
 ---
 
-<h1 class="!text-slate-100">Thinking in threads</h1>
+<h1 class="!text-white !text-3xl !font-bold !tracking-tight text-center mb-10">Thinking in threads</h1>
 
 ```mermaid {scale: 0.88}
 flowchart LR
@@ -374,7 +432,7 @@ layout: default
 layoutClass: gap-10
 ---
 
-<h1 class="!text-slate-100">Creator of OpenClaw</h1>
+<h1 class="!text-white !text-3xl !font-bold !tracking-tight">Creator of OpenClaw</h1>
 
 <Tweet id="2019903946056237516" scale="0.85" />
 
@@ -382,17 +440,20 @@ layoutClass: gap-10
 
 <!--
 - Is vibe coding
-- We cannot go that far yet without disaterous consequences
+- We cannot go that far yet without disastrous consequences
 -->
 
 
 ---
-layout: statement
+layout: center
+class: text-center
 ---
 
-## Switched to Neovim ~btw
-
-One persistent session per thread of work
+<div class="max-w-2xl mx-auto">
+  <h2 class="!text-4xl !font-bold !tracking-tight text-white">Switched to Neovim <span class="text-[#555]">~btw</span></h2>
+  <div class="w-16 h-px bg-[#333] mx-auto mt-6 mb-6" />
+  <p class="text-xl text-[#888]">One persistent session per thread of work</p>
+</div>
 
 <!--
 - Wanted one persistent session per thread of work
@@ -405,17 +466,37 @@ One persistent session per thread of work
 layout: default
 ---
 
-<h1 class="!text-slate-100">How I work</h1>
+<h1 class="!text-white !text-4xl !font-bold !tracking-tight">How I work</h1>
 
-<div class="mt-6 space-y-4 text-xl">
-  <div class="flex items-center gap-3"><span class="text-emerald-400 font-mono">1.</span> Throw / kick off</div>
-  <div class="flex items-center gap-3"><span class="text-emerald-400 font-mono">2.</span> Work</div>
-  <div class="flex items-center gap-3"><span class="text-emerald-400 font-mono">3.</span> Go to what needs me</div>
-  <div class="flex items-center gap-3"><span class="text-emerald-400 font-mono">4.</span> Push PRs</div>
-  <div class="flex items-center gap-3"><span class="text-emerald-400 font-mono">5.</span> PR merge = session deleted</div>
+<div class="mt-10 space-y-4 text-xl">
+  <div class="flex items-center gap-4 text-[#ccc]">
+    <span class="text-xs font-mono text-[#555] w-6 text-right">01</span>
+    <div class="w-px h-4 bg-[#333]" />
+    <span>Throw / kick off</span>
+  </div>
+  <div class="flex items-center gap-4 text-[#ccc]">
+    <span class="text-xs font-mono text-[#555] w-6 text-right">02</span>
+    <div class="w-px h-4 bg-[#333]" />
+    <span>Work</span>
+  </div>
+  <div class="flex items-center gap-4 text-[#ccc]">
+    <span class="text-xs font-mono text-[#555] w-6 text-right">03</span>
+    <div class="w-px h-4 bg-[#333]" />
+    <span>Go to what needs me</span>
+  </div>
+  <div class="flex items-center gap-4 text-[#ccc]">
+    <span class="text-xs font-mono text-[#555] w-6 text-right">04</span>
+    <div class="w-px h-4 bg-[#333]" />
+    <span>Push PRs</span>
+  </div>
+  <div class="flex items-center gap-4 text-[#ccc]">
+    <span class="text-xs font-mono text-[#555] w-6 text-right">05</span>
+    <div class="w-px h-4 bg-[#333]" />
+    <span>PR merge = session deleted</span>
+  </div>
 </div>
 
-<p class="mt-10 text-slate-400 text-lg italic">Effectively I'm a pull-based system on what needs me</p>
+<p class="mt-10 text-[#555] text-base italic border-l-2 border-[#333] pl-4">Effectively I'm a pull-based system on what needs me</p>
 
 <!--
 - "Throw/kick off" creates a worktree, names the branch, sets up the environment automatically. Show how cursor does it. Worktree reuse is key here — don't create new ones unnecessarily
@@ -430,13 +511,13 @@ layout: default
 layout: default
 ---
 
-<h1 class="!text-slate-100">Why this works</h1>
+<h1 class="!text-white !text-4xl !font-bold !tracking-tight">Why this works</h1>
 
-<div class="mt-8 space-y-6 text-xl">
-  <div class="rounded-xl bg-slate-800/60 px-6 py-4">No need to keep context of what I'm working on</div>
-  <div class="rounded-xl bg-slate-800/60 px-6 py-4">Switching threads is instant</div>
-  <div class="rounded-xl bg-slate-800/60 px-6 py-4">Everything is isolated — environment auto-setup</div>
-  <div class="rounded-xl bg-emerald-900/40 border border-emerald-500/30 px-6 py-4">Hydration!</div>
+<div class="mt-10 space-y-4 text-lg">
+  <div class="rounded-xl border border-white/8 bg-white/[0.03] px-6 py-5 text-[#ccc]">No need to keep context of what I'm working on</div>
+  <div class="rounded-xl border border-white/8 bg-white/[0.03] px-6 py-5 text-[#ccc]">Switching threads is instant</div>
+  <div class="rounded-xl border border-white/8 bg-white/[0.03] px-6 py-5 text-[#ccc]">Everything is isolated — environment auto-setup</div>
+  <div class="rounded-xl border border-white/[0.15] bg-white/[0.05] px-6 py-5 text-white font-medium">Hydration!</div>
 </div>
 
 <!--
@@ -447,12 +528,64 @@ layout: default
 -->
 
 
+
+
 ---
-layout: section
+layout: center
+class: text-center
 ---
 
-## Into the future
-What I'm working on, what I would like & where I think things are going
+<div class="max-w-3xl mx-auto">
+  <p class="text-sm uppercase tracking-widest text-[#555] mb-6">Takeaway</p>
+  <h2 class="!text-4xl !font-bold !tracking-tight text-white leading-snug">Bottom line</h2>
+  <div class="w-16 h-px bg-[#333] mx-auto mt-6 mb-6" />
+  <p class="text-xl text-[#888] leading-relaxed">The future is probably agent-first apps</p>
+  <p class="mt-4 text-lg text-[#555]">But I don't want to wait 8s for Cursor to open, so I'm stuck in crazy land</p>
+</div>
+
+<!--
+- Agent-first apps like T3 Code, Conductor, etc. are likely the direction everything is heading
+- But the overhead of GUI-heavy tools kills flow — 8 seconds to open Cursor is 8 seconds too many
+- So for now, neovim + worktrees + custom orchestration is the sweet spot for me
+- "Crazy land" = building your own workflow tooling, but it works
+-->
+
+
+---
+layout: center
+class: text-center
+---
+
+<div class="max-w-2xl mx-auto">
+  <h2 class="!text-4xl !font-bold !tracking-tight text-white">But at least I can say</h2>
+  <p class="mt-4 text-2xl text-[#888]">I use nvim btw</p>
+</div>
+
+
+---
+layout: center
+class: text-center
+---
+
+<div>
+  <h1 class="!text-6xl !font-bold !tracking-tight text-white">Questions?</h1>
+  <div class="w-16 h-px bg-[#333] mx-auto mt-8" />
+</div>
+
+
+
+---
+layout: center
+class: text-center
+---
+
+<div>
+  <div class="w-16 h-px bg-[#333] mx-auto mb-8" />
+  <p class="text-sm uppercase tracking-widest text-[#555] mb-4">Looking ahead</p>
+  <h2 class="!text-5xl !font-bold !tracking-tight text-white">Into the future</h2>
+  <p class="mt-4 text-lg text-[#666]">What I'm working on, what I'd like & where I think things are going</p>
+  <div class="w-16 h-px bg-[#333] mx-auto mt-8" />
+</div>
 
 
 ---
@@ -460,23 +593,28 @@ layout: default
 zoom: 0.88
 ---
 
-<h1 class="!text-slate-100">Levels of autonomy</h1>
+<h1 class="!text-white !text-4xl !font-bold !tracking-tight">Levels of autonomy</h1>
 
-<div class="mt-6 space-y-3 text-lg">
-  <div class="rounded-xl bg-slate-800/60 px-5 py-3 flex items-center gap-3">
-    <span class="text-red-400 font-mono text-sm">L0</span> No autonomy — each step interrupts you
+<div class="mt-8 space-y-3 text-lg">
+  <div class="rounded-xl border border-white/8 bg-white/[0.03] px-5 py-4 flex items-center gap-4">
+    <span class="font-mono text-sm text-[#666] bg-white/[0.05] rounded-md px-2.5 py-1 border border-white/8 min-w-[36px] text-center">L0</span>
+    <span class="text-[#a1a1a1]">No autonomy — each step interrupts you</span>
   </div>
-  <div class="rounded-xl bg-slate-800/60 px-5 py-3 flex items-center gap-3">
-    <span class="text-orange-400 font-mono text-sm">L1</span> Implementation — research, plan, implement, commit
+  <div class="rounded-xl border border-white/8 bg-white/[0.03] px-5 py-4 flex items-center gap-4">
+    <span class="font-mono text-sm text-[#666] bg-white/[0.05] rounded-md px-2.5 py-1 border border-white/8 min-w-[36px] text-center">L1</span>
+    <span class="text-[#a1a1a1]">Implementation — research, plan, implement, commit</span>
   </div>
-  <div class="rounded-xl bg-slate-800/60 px-5 py-3 flex items-center gap-3">
-    <span class="text-yellow-400 font-mono text-sm">L2</span> PR — previous + open PR
+  <div class="rounded-xl border border-white/8 bg-white/[0.03] px-5 py-4 flex items-center gap-4">
+    <span class="font-mono text-sm text-[#666] bg-white/[0.05] rounded-md px-2.5 py-1 border border-white/8 min-w-[36px] text-center">L2</span>
+    <span class="text-[#a1a1a1]">PR — previous + open PR</span>
   </div>
-  <div class="rounded-xl bg-slate-800/60 px-5 py-3 flex items-center gap-3">
-    <span class="text-emerald-400 font-mono text-sm">L3</span> Semi-full — previous + address feedback
+  <div class="rounded-xl border border-white/8 bg-white/[0.03] px-5 py-4 flex items-center gap-4">
+    <span class="font-mono text-sm text-[#666] bg-white/[0.05] rounded-md px-2.5 py-1 border border-white/8 min-w-[36px] text-center">L3</span>
+    <span class="text-[#a1a1a1]">Semi-full — previous + address feedback</span>
   </div>
-  <div class="rounded-xl bg-slate-800/60 px-5 py-3 flex items-center gap-3">
-    <span class="text-cyan-400 font-mono text-sm">L4</span> Vibe — previous + merge
+  <div class="rounded-xl border border-white/[0.15] bg-white/[0.05] px-5 py-4 flex items-center gap-4">
+    <span class="font-mono text-sm text-white bg-white/[0.08] rounded-md px-2.5 py-1 border border-white/[0.15] min-w-[36px] text-center">L4</span>
+    <span class="text-white font-medium">Vibe — previous + merge</span>
   </div>
 </div>
 
@@ -494,16 +632,20 @@ zoom: 0.88
 layout: default
 ---
 
-<h1 class="!text-slate-100"> <s>Cloud agents</s> Cloud sessions</h1>
-Local like IDE experience
+<h1 class="!text-white !text-4xl !font-bold !tracking-tight"><s class="text-[#555]">Cloud agents</s> Cloud sessions</h1>
+<p class="text-[#666] mt-1">Local-like IDE experience</p>
 
-<div class="mt-8 space-y-6 text-xl">
-  <div class="rounded-xl bg-slate-800/60 px-6 py-4">Sessions run remotely, not on your machine</div>
-  <div class="rounded-xl bg-red-900/30 border border-red-500/30 px-6 py-4">
-    <span class="text-red-300">Challenge:</span> Secrets management
+<div class="mt-8 space-y-4 text-lg">
+  <div class="rounded-xl border border-white/8 bg-white/[0.03] px-6 py-5 text-[#ccc]">
+    Sessions run remotely, not on your machine
   </div>
-  <div class="rounded-xl bg-slate-800/60 px-6 py-4">
-    <span class="text-slate-300">Provider model:</span> fly.io design
+  <div class="rounded-xl border border-red-500/20 bg-red-500/[0.04] px-6 py-5">
+    <span class="text-red-400/80 text-sm font-mono">Challenge:</span>
+    <span class="text-[#ccc] ml-2">Secrets management</span>
+  </div>
+  <div class="rounded-xl border border-white/8 bg-white/[0.03] px-6 py-5 text-[#ccc]">
+    <span class="text-[#666] text-sm font-mono">Provider model:</span>
+    <span class="ml-2">fly.io design</span>
   </div>
 </div>
 
@@ -516,14 +658,13 @@ Local like IDE experience
 
 
 
-
 ---
 layout: default
 ---
 
-<h1 class="!text-slate-100">Reset to step</h1>
+<h1 class="!text-white !text-4xl !font-bold !tracking-tight">Reset to step</h1>
 
-<div class="mt-8">
+<div class="mt-10">
 
 ```mermaid {scale: 0.85}
 flowchart LR
@@ -536,7 +677,7 @@ flowchart LR
 
 </div>
 
-<p class="mt-6 text-slate-300 text-lg">Go back to a previous step and iterate from there</p>
+<p class="mt-8 text-[#888] text-lg">Go back to a previous step and iterate from there</p>
 
 <!--
 - Implementation is bad? Go back to plan, see what the issue is, iterate from there
@@ -547,41 +688,10 @@ flowchart LR
 
 
 ---
-layout: statement
----
-
-<h1 class="!text-slate-100">Port isolation</h1>
-
-
----
-layout: statement
----
-
-## Bottom line
-
-The future is probably agent-first apps
-
-But I don't want to wait 8s for Cursor to open, so I'm stuck in crazy land
-
-<!--
-- Agent-first apps like T3 Code, Conductor, etc. are likely the direction everything is heading
-- But the overhead of GUI-heavy tools kills flow — 8 seconds to open Cursor is 8 seconds too many
-- So for now, neovim + worktrees + custom orchestration is the sweet spot for me
-- "Crazy land" = building your own workflow tooling, but it works
--->
-
-
----
-layout: statement
----
-
-## But at least I can say I use nvim btw
-
-
----
 layout: center
 class: text-center
 ---
 
-<h1 class="!text-5xl !text-slate-100">Questions?</h1>
-
+<div class="max-w-2xl mx-auto">
+  <h1 class="!text-5xl !font-bold !tracking-tight text-white">Port isolation</h1>
+</div>
