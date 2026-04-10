@@ -18,7 +18,7 @@ mdc: true
 <div class="h-full flex flex-col items-center justify-center px-16">
   <div class="mb-10 flex items-center gap-2 text-[#888] text-sm tracking-wide uppercase">
     <div class="w-5 h-px bg-[#333]" />
-    <span>Slidev Talk</span>
+    <span>ElevenLabs Claude Code Friday's</span>
     <div class="w-5 h-px bg-[#333]" />
   </div>
   <h1 class="!text-[56px] !leading-[1.1] !font-bold text-white max-w-4xl tracking-tight">
