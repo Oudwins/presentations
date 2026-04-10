@@ -92,6 +92,14 @@ layoutClass: gap-14
 
 
 
+<!--
+Say only
+- Spacecraft
+- Zog
+-->
+
+
+
 ---
 layout: image-right
 image: /assets/loot.jpeg
@@ -117,36 +125,42 @@ layoutClass: gap-14
 </div>
 
 
----
-layout: default
----
+<!--
+Say only
+- I play dnd & so does my cat
+-->
 
-<h1 class="!text-white !text-4xl !font-bold !tracking-tight">What I won't discuss today</h1>
 
-<div class="mt-10 space-y-3 text-lg text-[#888]">
-  <div class="flex items-center gap-3">
-    <span class="w-1.5 h-1.5 rounded-full bg-[#333]" />
-    Tools or SOPs for improving agent output
-  </div>
-  <div class="flex items-center gap-3">
-    <span class="w-1.5 h-1.5 rounded-full bg-[#333]" />
-    Context engineering
-  </div>
-  <div class="flex items-center gap-3">
-    <span class="w-1.5 h-1.5 rounded-full bg-[#333]" />
-    Claude Code specific ideas
-  </div>
-  <div class="flex items-center gap-3">
-    <span class="w-1.5 h-1.5 rounded-full bg-[#333]" />
-    Which models are best for what
-  </div>
-  <div class="flex items-center gap-3">
-    <span class="w-1.5 h-1.5 rounded-full bg-[#333]" />
-    Skills, MCPs, subagents...
-  </div>
-</div>
-
-<p class="mt-10 text-sm text-[#555]">But if people are interested in some of that maybe I can come back at some point to chat about it</p>
+<!-- --- -->
+<!-- layout: default -->
+<!-- --- -->
+<!---->
+<!-- <h1 class="!text-white !text-4xl !font-bold !tracking-tight">What I won't discuss today</h1> -->
+<!---->
+<!-- <div class="mt-10 space-y-3 text-lg text-[#888]"> -->
+<!--   <div class="flex items-center gap-3"> -->
+<!--     <span class="w-1.5 h-1.5 rounded-full bg-[#333]" /> -->
+<!--     Tools or SOPs for improving agent output -->
+<!--   </div> -->
+<!--   <div class="flex items-center gap-3"> -->
+<!--     <span class="w-1.5 h-1.5 rounded-full bg-[#333]" /> -->
+<!--     Context engineering -->
+<!--   </div> -->
+<!--   <div class="flex items-center gap-3"> -->
+<!--     <span class="w-1.5 h-1.5 rounded-full bg-[#333]" /> -->
+<!--     Claude Code specific ideas -->
+<!--   </div> -->
+<!--   <div class="flex items-center gap-3"> -->
+<!--     <span class="w-1.5 h-1.5 rounded-full bg-[#333]" /> -->
+<!--     Which models are best for what -->
+<!--   </div> -->
+<!--   <div class="flex items-center gap-3"> -->
+<!--     <span class="w-1.5 h-1.5 rounded-full bg-[#333]" /> -->
+<!--     Skills, MCPs, subagents... -->
+<!--   </div> -->
+<!-- </div> -->
+<!---->
+<!-- <p class="mt-10 text-sm text-[#555]">But if people are interested in some of that maybe I can come back at some point to chat about it</p> -->
 
 
 ---
