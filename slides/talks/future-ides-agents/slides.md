@@ -160,8 +160,9 @@ layout: center
 
 <h1 class="!text-slate-100">4 Cursor instances</h1>
 
-I found myself with 4 cusor instances open juggling between them.
+<p class="!flex-shrink-0">I found myself with 4 cusor instances open juggling between them.</p>
 
+<ImageContainer src="/assets/4-cursors.png" alt="Cursor agent interface" />
 
 
 <!--
