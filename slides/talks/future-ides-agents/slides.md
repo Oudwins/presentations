@@ -35,7 +35,7 @@ mdc: true
 </div>
 
 <!--
-Set the framing immediately: this is a workflow talk, not a model benchmark talk.
+Hey from comment
 -->
 
 ---
@@ -53,7 +53,7 @@ class: text-left
     How many people use worktrees specifically?
   </div>
   <div class="rounded-2xl bg-slate-100 px-6 py-4 text-slate-900">
-    How many do you have?
+    How many agents do you run in parallel on average?
   </div>
 </div>
 
@@ -70,7 +70,7 @@ I am probably wrong about a bunch of stuff.
 My setup and opinions are evolving, so this might be slightly different next week.
 
 ---
-layout: two-cols
+layout: default
 layoutClass: gap-14
 ---
 
@@ -80,17 +80,23 @@ layoutClass: gap-14
 - Founder of many failed or sunset startups and side projects
 - Before Eleven, I worked as an SDE on software for operating spacecraft
 - I do a lot of open source work; biggest claim to fame is `Zog`, a validation library for Go
-
-::right::
-
 - I work mostly on the marketing website
+
+
+
+---
+layout: image-right
+image: /assets/loot.jpeg
+class: bg-top
+layoutClass: gap-14
+---
+
+<h1 class="!text-slate-100">And also!</h1>
+
 - I run my own home server
 - I play Dungeons and Dragons and airsoft
 - I hate breaking flow, so I hate notifications
 
-<div class="mt-8 rounded-2xl border border-slate-200 bg-slate-50 px-5 py-4 text-sm text-slate-700">
-That last point matters more than it sounds. A lot of this talk is really about protecting flow.
-</div>
 
 ---
 layout: center
@@ -187,50 +193,127 @@ Refs: `x.com/steipete/status/2019903946056237516`, `steipete.me/posts/2025/shipp
 </div>
 
 ---
-layout: two-cols-header
-zoom: 0.84
+layout: section
 ---
 
-<h1 class="!text-slate-100">Current solution shapes</h1>
+# Current solution shapes
 
-::left::
+---
+zoom: 0.82
+---
 
-## IDE first
+<h1 class="!text-slate-100">IDE's</h1>
 
-- Cursor 2.0
-- great single-thread ergonomics
-- still tends to center one active workspace
+<div class="mt-8 grid grid-cols-2 gap-6 text-left max-w-5xl mx-auto">
+  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
+    <img src="./assets/solution-shapes/cursor.png" class="h-64 w-full object-cover object-top" alt="Cursor homepage screenshot" />
+    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
+      <div class="font-semibold">Cursor</div>
+    </div>
+  </div>
+  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
+    <img src="./assets/solution-shapes/windsurf.png" class="h-64 w-full object-cover object-top" alt="Windsurf homepage screenshot" />
+    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
+      <div class="font-semibold">Windsurf</div>
+    </div>
+  </div>
+</div>
 
-## Cloud agents
+---
+zoom: 0.82
+---
 
-- async by default
-- look scalable on paper
-- poor fit for day to day engineering loops
+<h1 class="!text-slate-100">Canvan</h1>
 
-## Orchestration first
+<div class="mt-8 grid grid-cols-2 gap-6 text-left max-w-5xl mx-auto">
+  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
+    <img src="./assets/solution-shapes/vibe-kanban.png" class="h-72 w-full object-cover object-top" alt="Vibe Kanban homepage screenshot" />
+    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
+      <div class="font-semibold">Vibe Kanban</div>
+    </div>
+  </div>
+  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
+    <img src="https://automaker.app/card.png" class="h-72 w-full object-cover object-top" alt="Automaker share image" />
+    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
+      <div class="font-semibold">Automaker</div>
+    </div>
+  </div>
+</div>
 
-- `gastown`
-- interesting direction
-- not enough for real engineering control yet
+---
+zoom: 0.82
+---
 
-::right::
+<h1 class="!text-slate-100">Orchestrator first</h1>
 
-## Agent first apps
+<div class="mt-8 grid grid-cols-2 gap-6 text-left max-w-5xl mx-auto">
+  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm col-span-2 max-w-3xl mx-auto">
+    <img src="https://miro.medium.com/v2/resize:fit:700/1*ReBwrC1sc9USnhvYXcrd4A.jpeg" class="h-80 w-full object-cover object-top" alt="Gastown blog post image" />
+    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
+      <div class="font-semibold">Gastown</div>
+    </div>
+  </div>
+</div>
 
-- `vibe-kanban`
-- Codex
-- `t3.chat` / `t3.codes`
-- Conductor
-- Superset
-- `claude-squad`
-- maybe Cursor 3.0
+---
+zoom: 0.76
+---
 
-## DIY stack
+<h1 class="!text-slate-100">Cloud agents</h1>
 
-- tmux
-- worktrees
-- local CLIs
-- scripts and glue
+<div class="mt-8 grid grid-cols-3 gap-5 text-left text-sm">
+  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
+    <img src="./assets/solution-shapes/claude.png" class="h-52 w-full object-cover object-top" alt="Claude homepage screenshot" />
+    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
+      <div class="font-semibold">Claude</div>
+    </div>
+  </div>
+  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
+    <img src="./assets/solution-shapes/cursor.png" class="h-52 w-full object-cover object-top" alt="Cursor homepage screenshot" />
+    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
+      <div class="font-semibold">Cursor</div>
+    </div>
+  </div>
+  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
+    <img src="./assets/solution-shapes/devin.png" class="h-52 w-full object-cover object-top" alt="Devin homepage screenshot" />
+    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
+      <div class="font-semibold">Devin</div>
+    </div>
+  </div>
+</div>
+
+---
+zoom: 0.76
+---
+
+<h1 class="!text-slate-100">Agent first</h1>
+
+<div class="mt-8 grid grid-cols-3 gap-5 text-left text-sm">
+  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
+    <img src="./assets/solution-shapes/t3-codes.png" class="h-52 w-full object-cover object-top" alt="T3 Code homepage screenshot" />
+    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
+      <div class="font-semibold">T3 Code</div>
+    </div>
+  </div>
+  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
+    <img src="./assets/solution-shapes/conductor.png" class="h-52 w-full object-cover object-top" alt="Conductor homepage screenshot" />
+    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
+      <div class="font-semibold">Conductor</div>
+    </div>
+  </div>
+  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
+    <img src="./assets/solution-shapes/superset.png" class="h-52 w-full object-cover object-top" alt="Superset homepage screenshot" />
+    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
+      <div class="font-semibold">Superset</div>
+    </div>
+  </div>
+</div>
+
+---
+layout: center
+---
+
+<h1 class="!text-slate-100 !text-6xl text-center">Build your own</h1>
 
 ---
 layout: center
