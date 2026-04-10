@@ -1,23 +1,34 @@
 <script setup lang="ts">
-defineProps<{
-  image: string
-  class?: string
-  backgroundSize?: string
-}>()
+import { computed } from 'vue'
+
+const props = defineProps({
+  image: {
+    type: String,
+  },
+  class: {
+    type: String,
+  },
+  contentClass: {
+    type: String,
+  },
+  backgroundSize: {
+    type: String,
+    default: 'cover',
+  },
+})
+
+const style = computed(() => ({
+  backgroundImage: `url(${props.image})`,
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: props.backgroundSize,
+}))
 </script>
 
 <template>
-  <div class="slidev-layout image-right grid h-full grid-cols-2">
-    <div class="my-auto px-14 py-10">
+  <div class="grid grid-cols-2 w-full h-full auto-rows-fr">
+    <div class="slidev-layout default" :class="props.contentClass">
       <slot />
     </div>
-    <div
-      class="h-full bg-no-repeat"
-      :class="$props.class"
-      :style="{
-        backgroundImage: `url(${$props.image})`,
-        backgroundSize: $props.backgroundSize || 'cover',
-      }"
-    />
+    <div class="w-full h-full" :class="props.class || 'bg-center'" :style="style" />
   </div>
 </template>

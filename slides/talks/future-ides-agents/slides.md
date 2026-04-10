@@ -99,48 +99,62 @@ layoutClass: gap-14
 
 
 ---
-layout: center
+layout: statement
 class: text-center
 ---
 
-<h1 class="!text-slate-100">I was a coding agent skeptic until Dec 2025</h1>
+<h1 class="!text-slate-100">The goal</h1>
 
-<div class="mt-8 text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-Not because the demos were bad.
-<br><br>
-Because the workflow cost felt higher than the leverage.
+<div class="text-4xl leading-tight max-w-4xl mx-auto">
+Increase your parallelism
+<br>
+without decreasing code quality
 </div>
 
+
+
+
 ---
-layout: two-cols-header
+layout: default
 ---
-
-<h1 class="!text-slate-100">What this talk is about</h1>
-
-::left::
-
-## Core idea
-
-I think about engineering work as a <span v-mark.underline.orange>thread of work</span>.
-
-- agents let us scale from one thread to multiple
-- the challenge is not raw generation speed
-- the challenge is coordination, oversight and context
-
-::right::
 
 ## What you should leave with
 
+- Ideas, tools and strategies to try for yourself to increase your own parallelism
 - a better mental model for multi-threaded engineering
-- patterns for scaling parallelism without tanking quality
-- a practical view on where local, remote and cloud agents fit
+- A view into my setup
+
+## What I won't discuss today
+
+- Tools or SOPs for improving agent output
+- Context engineering
+- Claude Code Specific ideas
+- Which models are best for what
+- Skills, MCPs, subagents...
+
+But if people are interested in some of that maybe I can come back at some point to chat about it
+
+
+
+
+
+---
+layout: statement
+class: text-center
+---
+
+## Guilty admision
+
+I was a coding agent skeptic until Dec 2025
+
+
 
 ---
 layout: center
 zoom: 0.82
 ---
 
-<h1 class="!text-slate-100">One thread of work</h1>
+<h1 class="!text-slate-100">Thinking in threads</h1>
 
 ```mermaid {scale: 0.88}
 flowchart LR
@@ -154,43 +168,39 @@ flowchart LR
   PR -. feedback .-> I
 ```
 
-<div class="mt-6 text-slate-300 text-lg max-w-5xl mx-auto">
-The important change is not that the steps disappeared. It is that more of them can now run in parallel.
-</div>
+
+
+<!--
+Now we just have to run this in parallel as much as possible. That means doing as little ourselves as possible and delegating as much as possible to the agent
+-->
+
 
 ---
-layout: center
-class: text-center
+layout: image
+image: /assets/threads-of-work.png
 ---
 
-<h1 class="!text-slate-100">The goal</h1>
 
-<div class="text-4xl leading-tight max-w-4xl mx-auto">
-Increase your parallelism
-<br>
-without decreasing code quality
-</div>
+<!--
+Key idea here which is pretty obvious is that the less user involvement the more threads we can have at once
+-->
+
 
 ---
-layout: two-cols
+layout: default
 layoutClass: gap-10
 ---
 
-<h1 class="!text-slate-100">A useful reference point</h1>
+<h1 class="!text-slate-100">Creator of OpenClaw</h1>
 
-<Tweet id="2019903946056237516" scale="0.82" />
+<Tweet id="2019903946056237516" scale="0.85" />
 
-::right::
 
-> "The amount of software I can create is now mostly limited by inference time and hard thinking."
 
-<div class="mt-6 text-slate-300 leading-relaxed">
-Peter Steinberger's workflow is a good example of where this is heading: multiple active threads, local control, lots of automation, and the human spending more time steering than typing.
-</div>
-
-<div class="mt-8 text-sm text-slate-400">
-Refs: `x.com/steipete/status/2019903946056237516`, `steipete.me/posts/2025/shipping-at-inference-speed`
-</div>
+<!--
+- Is vibe coding
+- We cannot go that far yet without disaterous consequences
+-->
 
 ---
 layout: section
@@ -240,20 +250,6 @@ zoom: 0.82
   </div>
 </div>
 
----
-zoom: 0.82
----
-
-<h1 class="!text-slate-100">Orchestrator first</h1>
-
-<div class="mt-8 grid grid-cols-2 gap-6 text-left max-w-5xl mx-auto">
-  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm col-span-2 max-w-3xl mx-auto">
-    <img src="https://miro.medium.com/v2/resize:fit:700/1*ReBwrC1sc9USnhvYXcrd4A.jpeg" class="h-80 w-full object-cover object-top" alt="Gastown blog post image" />
-    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
-      <div class="font-semibold">Gastown</div>
-    </div>
-  </div>
-</div>
 
 ---
 zoom: 0.76
@@ -288,11 +284,17 @@ zoom: 0.76
 
 <h1 class="!text-slate-100">Agent first</h1>
 
-<div class="mt-8 grid grid-cols-3 gap-5 text-left text-sm">
+<div class="mt-8 grid grid-cols-4 gap-5 text-left text-sm">
   <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
     <img src="./assets/solution-shapes/t3-codes.png" class="h-52 w-full object-cover object-top" alt="T3 Code homepage screenshot" />
     <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
       <div class="font-semibold">T3 Code</div>
+    </div>
+  </div>
+  <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
+    <img src="./assets/solution-shapes/cursor.png" class="h-52 w-full object-cover object-top" alt="Cursor 3.0 screenshot" />
+    <div class="px-4 py-3 text-slate-800 text-lg font-semibold">
+      <div class="font-semibold">Cursor 3.0</div>
     </div>
   </div>
   <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
@@ -308,6 +310,19 @@ zoom: 0.76
     </div>
   </div>
 </div>
+
+---
+zoom: 0.82
+layout: image
+image: https://miro.medium.com/v2/resize:fit:700/1*ReBwrC1sc9USnhvYXcrd4A.jpeg
+---
+
+<!-- <h1 class="!text-slate-100">Gastown</h1> -->
+
+
+<!--
+Gastown. Oschestrator first
+-->
 
 ---
 layout: center
@@ -341,21 +356,14 @@ The problem was not lack of agent power. The problem was lack of thread manageme
 </div>
 
 ---
-layout: center
+layout: image
 class: text-left
+image: /assets/isolation.png
+backgroundSize: contain
 ---
 
 <h1 class="!text-slate-100">Shared repos are hostile to parallel agent work</h1>
 
-<div class="mt-8 rounded-3xl border-2 border-dashed border-slate-300 bg-slate-50 p-8">
-  <div class="text-sm uppercase tracking-[0.2em] text-slate-500 mb-3">Screenshot placeholder</div>
-  <div class="text-2xl leading-relaxed text-slate-700">
-    Add the screenshot of the colleague who almost had a bunch of code deleted.
-  </div>
-  <div class="mt-4 text-slate-500">
-    This slide works best as the concrete "never share mutable state with an unsupervised agent" moment.
-  </div>
-</div>
 
 ---
 layout: center
