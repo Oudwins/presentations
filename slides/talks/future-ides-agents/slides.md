@@ -385,6 +385,202 @@ layoutClass: gap-10
 -->
 
 
+---
+layout: statement
+---
+
+## Switched to Neovim ~btw
+
+One persistent session per thread of work
+
+<!--
+- Wanted one persistent session per thread of work
+- Each thread gets its own neovim session that stays alive
+- No more juggling multiple IDE windows or forgetting where things are
+-->
 
 
+---
+layout: default
+---
+
+<h1 class="!text-slate-100">How I work</h1>
+
+<div class="mt-6 space-y-4 text-xl">
+  <div class="flex items-center gap-3"><span class="text-emerald-400 font-mono">1.</span> Throw / kick off</div>
+  <div class="flex items-center gap-3"><span class="text-emerald-400 font-mono">2.</span> Work</div>
+  <div class="flex items-center gap-3"><span class="text-emerald-400 font-mono">3.</span> Go to what needs me</div>
+  <div class="flex items-center gap-3"><span class="text-emerald-400 font-mono">4.</span> Push PRs</div>
+  <div class="flex items-center gap-3"><span class="text-emerald-400 font-mono">5.</span> PR merge = session deleted</div>
+</div>
+
+<p class="mt-10 text-slate-400 text-lg italic">Effectively I'm a pull-based system on what needs me</p>
+
+<!--
+- "Throw/kick off" creates a worktree, names the branch, sets up the environment automatically. Show how cursor does it. Worktree reuse is key here — don't create new ones unnecessarily
+- "Work" is the agent doing its thing inside the session
+- "Go to what needs me" — I poll across sessions, only jumping in where I'm actually needed
+- PR merge triggers cleanup — the session and worktree get deleted automatically
+- The mental model shift: I'm not pushing work forward, I'm pulling from a queue of things that need my attention
+-->
+
+
+---
+layout: default
+---
+
+<h1 class="!text-slate-100">Why this works</h1>
+
+<div class="mt-8 space-y-6 text-xl">
+  <div class="rounded-xl bg-slate-800/60 px-6 py-4">No need to keep context of what I'm working on</div>
+  <div class="rounded-xl bg-slate-800/60 px-6 py-4">Switching threads is instant</div>
+  <div class="rounded-xl bg-slate-800/60 px-6 py-4">Everything is isolated — environment auto-setup</div>
+  <div class="rounded-xl bg-emerald-900/40 border border-emerald-500/30 px-6 py-4">Hydration!</div>
+</div>
+
+<!--
+- I only have to think about the next thing and poll from the queue. No juggling mental context across threads
+- Moving from one thread of work to the next is instant — just switch to the session
+- Each worktree is fully isolated. Environment is automatically set up at creation time
+- Hydration: when I jump into a session, the agent has already done work and left me context. I hydrate into the thread quickly rather than rebuilding context from scratch
+-->
+
+
+---
+layout: section
+---
+
+## Into the future
+What I'm working on, what I would like & where I think things are going
+
+
+---
+layout: default
+zoom: 0.88
+---
+
+<h1 class="!text-slate-100">Levels of autonomy</h1>
+
+<div class="mt-6 space-y-3 text-lg">
+  <div class="rounded-xl bg-slate-800/60 px-5 py-3 flex items-center gap-3">
+    <span class="text-red-400 font-mono text-sm">L0</span> No autonomy — each step interrupts you
+  </div>
+  <div class="rounded-xl bg-slate-800/60 px-5 py-3 flex items-center gap-3">
+    <span class="text-orange-400 font-mono text-sm">L1</span> Implementation — research, plan, implement, commit
+  </div>
+  <div class="rounded-xl bg-slate-800/60 px-5 py-3 flex items-center gap-3">
+    <span class="text-yellow-400 font-mono text-sm">L2</span> PR — previous + open PR
+  </div>
+  <div class="rounded-xl bg-slate-800/60 px-5 py-3 flex items-center gap-3">
+    <span class="text-emerald-400 font-mono text-sm">L3</span> Semi-full — previous + address feedback
+  </div>
+  <div class="rounded-xl bg-slate-800/60 px-5 py-3 flex items-center gap-3">
+    <span class="text-cyan-400 font-mono text-sm">L4</span> Vibe — previous + merge
+  </div>
+</div>
+
+<!--
+- At creation time for the thread you define its level of autonomy, which defines your interception points
+- L0: no autonomy, you're involved at every step — basically pair programming
+- L1: agent does research, planning, implementation, and commits — you review after
+- L2: agent also opens the PR for you
+- L3: agent also addresses PR feedback from reviewers autonomously
+- L4: full vibe mode — agent merges when approved. You trust the process end to end
+-->
+
+
+---
+layout: default
+---
+
+<h1 class="!text-slate-100"> <s>Cloud agents</s> Cloud sessions</h1>
+Local like IDE experience
+
+<div class="mt-8 space-y-6 text-xl">
+  <div class="rounded-xl bg-slate-800/60 px-6 py-4">Sessions run remotely, not on your machine</div>
+  <div class="rounded-xl bg-red-900/30 border border-red-500/30 px-6 py-4">
+    <span class="text-red-300">Challenge:</span> Secrets management
+  </div>
+  <div class="rounded-xl bg-slate-800/60 px-6 py-4">
+    <span class="text-slate-300">Provider model:</span> fly.io design
+  </div>
+</div>
+
+<!--
+- Cloud sessions let you offload entirely — sessions don't consume local resources
+- Biggest challenge is secrets. How do you give a cloud agent access to your credentials, API keys, etc. securely?
+- Provider model reference: https://fly.io/blog/design-and-implementation/ — good design for how to think about remote execution environments
+-->
+
+
+
+
+
+---
+layout: default
+---
+
+<h1 class="!text-slate-100">Reset to step</h1>
+
+<div class="mt-8">
+
+```mermaid {scale: 0.85}
+flowchart LR
+  R[Research] --> P[Plan]
+  P --> I[Implementation]
+  I --> V[Review]
+  R -. "reset" .- I
+  P -. "reset" .- V
+```
+
+</div>
+
+<p class="mt-6 text-slate-300 text-lg">Go back to a previous step and iterate from there</p>
+
+<!--
+- Implementation is bad? Go back to plan, see what the issue is, iterate from there
+- Plan is bad? Go back to research
+- This is like git reset but for the agent workflow itself — you rewind the thread to an earlier stage
+- Avoids starting from scratch when only one phase went wrong
+-->
+
+
+---
+layout: statement
+---
+
+<h1 class="!text-slate-100">Port isolation</h1>
+
+
+---
+layout: statement
+---
+
+## Bottom line
+
+The future is probably agent-first apps
+
+But I don't want to wait 8s for Cursor to open, so I'm stuck in crazy land
+
+<!--
+- Agent-first apps like T3 Code, Conductor, etc. are likely the direction everything is heading
+- But the overhead of GUI-heavy tools kills flow — 8 seconds to open Cursor is 8 seconds too many
+- So for now, neovim + worktrees + custom orchestration is the sweet spot for me
+- "Crazy land" = building your own workflow tooling, but it works
+-->
+
+
+---
+layout: statement
+---
+
+## But at least I can say I use nvim btw
+
+
+---
+layout: center
+class: text-center
+---
+
+<h1 class="!text-5xl !text-slate-100">Questions?</h1>
 
